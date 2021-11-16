@@ -11,13 +11,13 @@ const Header = ({title}: Props) => {
     return (
             <View style={tw("flex-row justify-between mx-4 mb-2")}>
 
-                <TouchableOpacity  activeOpacity={0.8}>
+                <TouchableOpacity  activeOpacity={0.4}>
                 <FontAwesome name="user" size={30} color="white" />
                 </TouchableOpacity>
 
                 <Text style={tw("text-white text-2xl font-bold mb-2")}>  {title}  </Text>
 
-                <TouchableOpacity activeOpacity={0.8}>
+                <TouchableOpacity activeOpacity={0.4}>
                 <AntDesign name="setting" size={30} color="white" />
                 </TouchableOpacity>
             </View>
