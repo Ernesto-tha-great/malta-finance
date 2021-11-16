@@ -18,8 +18,8 @@ const TransactionCard = ({name, amount, date, image, symbol}: Props) => {
             </View>
 
            
-            <View style={tw("-ml-24")}>
-                <Text style={tw("text-white text-lg font-semibold")}>{name}</Text>
+            <View style={tw("-ml-16")}>
+                <Text style={tw("text-yellow-100 text-lg font-semibold")}>{name}</Text>
                 <Text style={tw("text-gray-400")}>{date}</Text>
             </View>
 

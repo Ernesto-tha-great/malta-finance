@@ -4,7 +4,7 @@ import tw from 'tailwind-rn';
 
 const Balance = () => {
     return (
-        <View style={tw("items-center bg-gray-800 py-6 rounded-xl mb-6")}>
+        <View style={tw("items-center bg-gray-800 py-6 rounded-xl mb-3")}>
 
             <View style={tw("items-center")}>
             <Text style={tw("text-lg text-gray-400 mb-3 -mt-3")}>Available</Text>
