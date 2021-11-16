@@ -7,23 +7,27 @@ import Card from '../components/Card';
 const data = [
     {
         name: 'Goal',
-        value: '$1,184.08',
-        currency: 'USD'
+        value: '1184.08',
+        currency: 'USD',  
+        symbol: '$'
     },
     {
         name: 'Available',
-        value: '$1,432.35',
-        currency: 'USD'
+        value: '233.34',
+        currency: 'USD',
+        symbol: '$'
     },
     {
         name: 'Savings',
-        value: '$498.22',
-        currency: 'USD'
+        value: '-498.22',
+        currency: 'USD',
+        symbol: '$'
     },
     {
         name: 'Portolio',
-        value: '$3,451.13',
-        currency: 'USD'
+        value: '3451.13',
+        currency: 'USD',
+        symbol: '$'
     },
 
     
@@ -37,8 +41,8 @@ const HomeScreen = () => {
            <Header title={headerLabel} />
             <View>
                 <ScrollView >
-                    {data.map(({name, value, currency}, index) => (
-                        <Card key={index} name={name} value={value} currency={currency} />
+                    {data.map(({name, value, currency, symbol}, index) => (
+                        <Card key={index} name={name} value={value} currency={currency} symbol={symbol} />
                     ))}
                 </ScrollView>
             </View>

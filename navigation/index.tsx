@@ -57,7 +57,7 @@ function BottomTabNavigator() {
           position:'absolute',
           bottom: 0,
           width: DEVICE_WIDTH,
-          height: 85,
+          height: 78,
           zIndex: 8 
         },
         tabBarInactiveTintColor:"#555555",
@@ -74,7 +74,6 @@ function BottomTabNavigator() {
         name="Home"
         component={HomeScreen}
         options={({ navigation }: RootTabScreenProps<'Home'>) => ({
-          
           tabBarIcon: ({color}) => <MaterialIcons  name="home-filled" size={30} color={color}  />
         })}
       />
@@ -83,7 +82,7 @@ function BottomTabNavigator() {
         component={WalletScreen}
         options={{
          
-          tabBarIcon: ({color}) =>  <MaterialCommunityIcons  name="wallet" size={30} color={color}  />,
+          tabBarIcon: ({color}) =>  <MaterialCommunityIcons style={{}}  name="wallet" size={30} color={color}  />,
         }}
       />
 
